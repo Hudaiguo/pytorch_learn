@@ -1,24 +1,36 @@
 import torch
+import numpy as np
 
 x = torch.Tensor(2, 3)
 y = torch.Tensor(4, 2, 3)
 # print(x+y)
 
-x = torch.empty(5, 3)  #构造一个未初始化的5x3矩阵
-print(x)
+x = torch.empty(2, 3)  #构造一个未初始化的5x3矩阵
+y = np.empty((2,3))    #构造一个未初始化的5x3矩阵
+# print(x, y)
 
-x = torch.rand(2, 3) #构建一个随机初始化矩阵
-print(x)
+x = torch.zeros(2, 3, dtype=torch.long)  #填充0的矩阵
+x1 = torch.ones(2,3)
+y = np.zeros((2,3))
+y1 = np.ones((2,3), dtype=np.uint8)
+# print(x1, "\n", y1)
 
-x = torch.zeros(2, 4, dtype=torch.long)  #填充0的矩阵
-print(x)
+m= x.new_ones(2, 2, dtype=torch.double)
+n = y
+print(y)
+
+x = torch.rand(2, 3)       #构建一个随机初始化矩阵
+y = np.random.rand(2,3)    #构建一个随机初始化矩阵
+z = np.random.randint(0, 10, (2,3), dtype=np.uint8)  #构建一个区间为[0-10]的随机初始化矩阵
+
+
+"""
 
 x = torch.Tensor([[2.0, 3.33]]) #直接构造张量
 print(x)
 
 
-y = x.new_ones(2, 2, dtype=torch.double)
-print(y)
+
 
 y = torch.randn_like(x, dtype=torch.float)
 print(y)
@@ -74,3 +86,5 @@ if torch.cuda.is_available():
     z = x + y
     print(z)
     print(z.to("cpu", torch.double))
+
+"""
