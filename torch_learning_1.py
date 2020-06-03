@@ -73,6 +73,6 @@ torch.FloatTensor([[1, 2, 3], [4, 5, 6]])
 torch.IntTensor(2, 4).zero_()
 
 """
-会改变tensor的函数操作会用一个下划线后缀来标示。比如，torch.FloatTensor.abs_()会在原地计算绝对值，并返回改变后的tensor，
+wo会改变tensor的函数操作会用一个下划线后缀来标示。比如，torch.FloatTensor.abs_()会在原地计算绝对值，并返回改变后的tensor，
 而tensor.FloatTensor.abs()将会在一个新的tensor中计算结果
 """
