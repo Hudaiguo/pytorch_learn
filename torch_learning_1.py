@@ -16,6 +16,7 @@ y1 = np.ones((2,3), dtype=np.uint8)
 # print(x1, "\n", y1)
 
 m= x.new_ones(2, 2)     #可继承原有属性
+y = torch.randn_like(x, dtype=torch.float)
 n = np.ones_like(y)     #返回一个用1填充的跟输入 形状和类型 一致的数组。
 # print(m, n)
 
@@ -24,60 +25,35 @@ y = np.random.rand(2,3)    #构建一个随机初始化矩阵
 z = np.random.randint(0, 10, (2,3), dtype=np.uint8)  #构建一个区间为[0-10]的随机初始化矩阵
 
 
-"""
+x = torch.Tensor([[2.0, 3.33]])   #直接构造张量
+x1 = torch.Tensor([2, 3])
+y = np.array([[2.0, 3.33],
+              [2.3, 3.54]])
+y1 = np.array([2, 3])
 
-x = torch.Tensor([[2.0, 3.33]]) #直接构造张量
-print(x)
-
-
-
-
-y = torch.randn_like(x, dtype=torch.float)
-print(y)
-
-print(y.size())
-
-print(x+y)  #加法
-print(torch.add(x, y))
-y.add_(x)
-print(y)
-
-#调整大小
-x = torch.rand(4, 4)
-print(x)
-y = x.view(16)
-print(y)
-z = x.view(-1, 8)
-print(z)
-
+#np与torch之间互转#np与torch之间互转
+m = x.numpy()  #torch转numpy
+n = torch.from_numpy(y) #numpy转torch
+# print(m, "\n", n)
 #将torch张量转为python数字
 x = torch.randn(1)
-print(x)
-print(x.item())
+m = x.item() #tensor转数字
+# print(x, "\n", m)
 
-#二、Numpy与Torch之间转换
-a = torch.ones(5)
-print(a)
-aa = a.numpy()
-print(aa) #转为numpy列表
+#调整大小
+x = torch.rand((4,4),)
+m = x.view((-1, 8))
+n = x.view((16))
 
-b = torch.ones(1,3)
-print(b)
-print(b.numpy())
+#加法
+x = torch.rand((2,3))
+y = torch.ones((2,3))
+m = x + y
+n = torch.add(x, y)
+l = y.add_(x)
+# print(m, "\n", n, "\n", l)
 
-a.add_(1) #说明a与aa访问同一块内存
-a = torch.add(a, 1) #这样是不同的
-print(a)
-print(aa)
-
-import numpy as np
-a = np.ones(5)
-b = torch.from_numpy(a)  #numpy转torch
-print(a)
-print(b)
-c = np.add(a, 1, out=a)
-print(c)
-
+"""
 #CUDA张量
 if torch.cuda.is_available():
     device = torch.device("cuda")          # a CUDA device object
