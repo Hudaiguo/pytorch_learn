@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="tf.nn and tf.nn.functional" />
+    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="pytorch basic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +140,28 @@
       <option name="project" value="LOCAL" />
       <updated>1591201182137</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tf.nn and tf.nn.functional">
+      <created>1591201291915</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201291915</updated>
+    </task>
+    <task id="LOCAL-00010" summary="tf.nn and tf.nn.functional">
+      <created>1591201446209</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201446209</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pytorch basic">
+      <created>1591201591254</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201591254</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,8 +182,10 @@
     <MESSAGE value="tf.nn and tf.nn.functional&#10;pytorch basic" />
     <MESSAGE value="torch.nn and torch.nn.functional 2" />
     <MESSAGE value="basic torch" />
+    <MESSAGE value="tf.nn and tf.nn.functionalb" />
     <MESSAGE value="tf.nn and tf.nn.functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="tf.nn and tf.nn.functional" />
+    <MESSAGE value="pytorch basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="pytorch basic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591192684699">
