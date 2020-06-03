@@ -9,3 +9,8 @@
 
 import os
 print(__file__)
+
+import cv2
+
+path = r""
+img = cv2.imread(path, 0)
