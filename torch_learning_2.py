@@ -3,7 +3,8 @@ import torch.nn as tnn
 import torch.nn.functional as F
 """
 两者功能相近。
-torch.nn  是一个类，继承于nn.model。
+torch.nn  是一个类，继承于nn.model。包含Containers（容器），非线性激活函数，卷积层，池化层，归一化层，线性层， dropout层，稀疏层，视觉层（Vision Layers），距离函数(distance function),
+损失函数， 填充函数
 torch.nn.functional 是一个函数,包含非线性激活函数，卷积函数，池化函数，归一化函数，线性函数， dropout函数，距离函数(distance function),
 损失函数， 填充函数
 """
@@ -13,9 +14,11 @@ torch.nn.functional 是一个函数,包含非线性激活函数，卷积函数�
 在训练或者使用时，我们就要手动去维护weight, bias, stride这些中间量的值，这显然是给用户带来了不便。而如果我们只保留nn下的类的话，
 其实就牺牲了一部分灵活性，因为做一些简单的计算都需要创造一个类，这也与PyTorch的风格不符。
 
-但PyTorch官方推荐：具有学习参数的（例如，conv2d, linear, batch_norm)采用nn.Xxx方式，
+但PyTorch官方推荐：具有学习参数的（例如，conv2d, linear, batch_norm)采用nn.xxx方式，
 没有学习参数的（例如，maxpool, loss func, activation func）等根据个人选择使用nn.functional.xxx或者nn.Xxx方式。
 但关于dropout，个人强烈推荐使用nn.Xxx方式，因为一般情况下只有训练阶段才进行dropout，在eval阶段都不会进行dropout。
+
+torch.nn.Module 所有网络的基类。 你的模型也应该继承这个类。
 """
 
 """

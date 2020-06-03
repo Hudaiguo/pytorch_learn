@@ -65,3 +65,14 @@ m = x[1:, 1]  #切片和索引
 n = x[x>0.5]  #花式索引
 
 print(x, "\n", m, "\n", n)
+
+"""Torch定义了七种CPU tensor类型和八种GPU tensor类型
+torch.FloatTensor([[1, 2, 3], [4, 5, 6]])
+"""
+torch.FloatTensor([[1, 2, 3], [4, 5, 6]])
+torch.IntTensor(2, 4).zero_()
+
+"""
+会改变tensor的函数操作会用一个下划线后缀来标示。比如，torch.FloatTensor.abs_()会在原地计算绝对值，并返回改变后的tensor，
+而tensor.FloatTensor.abs()将会在一个新的tensor中计算结果
+"""
