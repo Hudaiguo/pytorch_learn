@@ -50,7 +50,7 @@ def conv1d(input, weight, bias=None, stride=1, padding=0, dilation=1, groups=1):
 x = torch.ones((2,3), requires_grad=True)
 print(x)
 
-
+"""
 https://pytorch-cn.readthedocs.io/zh/latest/package_references/functional/#torchnnfunctional
-
 https://pytorch-cn.readthedocs.io/zh/latest/package_references/torch-nn/#torchnn
+"""
