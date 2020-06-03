@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="torch.nn and torch.nn.functional 2" />
+    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="tf.nn and tf.nn.functional" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +112,35 @@
       <option name="project" value="LOCAL" />
       <updated>1591200809212</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tf.nn and tf.nn.functional">
+      <created>1591201073168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201073168</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tf.nn and tf.nn.functional">
+      <created>1591201144245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201144245</updated>
+    </task>
+    <task id="LOCAL-00007" summary="tf.nn and tf.nn.functional">
+      <created>1591201160877</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201160877</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tf.nn and tf.nn.functional">
+      <created>1591201182137</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591201182137</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,13 +153,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="自动求导" />
     <MESSAGE value="AlexNet" />
-    <MESSAGE value="tf.nn and tf.nn.functional" />
     <MESSAGE value="tf.nn and tf.nn.functional&#10;pytorch basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="tf.nn and tf.nn.functional&#10;pytorch basic" />
+    <MESSAGE value="torch.nn and torch.nn.functional 2" />
+    <MESSAGE value="basic torch" />
+    <MESSAGE value="tf.nn and tf.nn.functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="tf.nn and tf.nn.functional" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591192684699">
