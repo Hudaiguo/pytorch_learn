@@ -51,3 +51,6 @@ x = torch.ones((2,3), requires_grad=True)
 print(x)
 
 
+https://pytorch-cn.readthedocs.io/zh/latest/package_references/functional/#torchnnfunctional
+
+https://pytorch-cn.readthedocs.io/zh/latest/package_references/torch-nn/#torchnn
