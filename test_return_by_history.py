@@ -6,3 +6,6 @@
 """
 
 #测试pycharm，通过history 进行回滚操作
+
+import os
+print(__file__)
