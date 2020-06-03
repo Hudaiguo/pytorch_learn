@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 
+"""pytorch的基本运算"""
 x = torch.Tensor(2, 3)
 y = torch.Tensor(4, 2, 3)
 # print(x+y)
@@ -50,17 +51,5 @@ x = torch.rand((2,3))
 y = torch.ones((2,3))
 m = x + y
 n = torch.add(x, y)
-l = y.add_(x)
+l = y.add_(x)   #相当于 +=
 # print(m, "\n", n, "\n", l)
-
-"""
-#CUDA张量
-if torch.cuda.is_available():
-    device = torch.device("cuda")          # a CUDA device object
-    y = torch.ones_like(x, device=device)  # directly create a tensor on GPU
-    x = x.to(device)                       # or just use strings ``.to("cuda")``
-    z = x + y
-    print(z)
-    print(z.to("cpu", torch.double))
-
-"""
