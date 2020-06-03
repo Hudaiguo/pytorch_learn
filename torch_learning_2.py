@@ -53,4 +53,6 @@ print(x)
 """
 https://pytorch-cn.readthedocs.io/zh/latest/package_references/functional/#torchnnfunctional
 https://pytorch-cn.readthedocs.io/zh/latest/package_references/torch-nn/#torchnn
+
+https://www.cnblogs.com/silence-cho/p/11404817.html
 """
