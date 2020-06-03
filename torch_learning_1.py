@@ -15,9 +15,9 @@ y = np.zeros((2,3))
 y1 = np.ones((2,3), dtype=np.uint8)
 # print(x1, "\n", y1)
 
-m= x.new_ones(2, 2, dtype=torch.double)
-n = y
-print(y)
+m= x.new_ones(2, 2)     #可继承原有属性
+n = np.ones_like(y)     #返回一个用1填充的跟输入 形状和类型 一致的数组。
+# print(m, n)
 
 x = torch.rand(2, 3)       #构建一个随机初始化矩阵
 y = np.random.rand(2,3)    #构建一个随机初始化矩阵
