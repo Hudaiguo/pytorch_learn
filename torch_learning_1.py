@@ -78,3 +78,4 @@ torch.IntTensor(2, 4).zero_()
 """
 
 #tensor, variable, module
+print(torch.is_tensor(x))

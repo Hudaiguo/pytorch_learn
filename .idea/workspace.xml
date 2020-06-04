@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="pytorch basic">
-      <change afterPath="$PROJECT_DIR$/NetWork.py" afterDir="false" />
+    <list default="true" id="99bf899b-e177-4ecf-9740-6d468aa62cd5" name="Default Changelist" comment="Network">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torch_learning_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/torch_learning_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.NetWork">
+  <component name="RunManager" selected="Python.torch_learning_1">
     <configuration name="NetWork" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytorch_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.NetWork" />
         <item itemvalue="Python.torch_learning_1" />
+        <item itemvalue="Python.NetWork" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591201591254</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Network">
+      <created>1591253374044</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591253374044</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +218,8 @@
     <MESSAGE value="tf.nn and tf.nn.functionalb" />
     <MESSAGE value="tf.nn and tf.nn.functional" />
     <MESSAGE value="pytorch basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="pytorch basic" />
+    <MESSAGE value="Network" />
+    <option name="LAST_COMMIT_MESSAGE" value="Network" />
   </component>
   <component name="WindowStateProjectService">
     <state x="536" y="95" key="#NetWork" timestamp="1591241683342">
@@ -231,26 +239,31 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591192651385" />
     <state x="569" y="165" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1591241664990" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1591200937978">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1658" height="267" key="GridCell.Tab.0.bottom" timestamp="1591253934404">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591200937978" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1591200937978">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1658" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1591253934404" />
+    <state width="1658" height="267" key="GridCell.Tab.0.center" timestamp="1591253934404">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591200937978" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1591200937977">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1658" height="267" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1591253934404" />
+    <state width="1658" height="267" key="GridCell.Tab.0.left" timestamp="1591253934404">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591200937977" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1591200937978">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1658" height="267" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1591253934404" />
+    <state width="1658" height="267" key="GridCell.Tab.0.right" timestamp="1591253934404">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591200937978" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591200813494">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1658" height="267" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1591253934404" />
+    <state x="338" y="135" key="Vcs.Push.Dialog.v2" timestamp="1591253396168">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591200813494" />
+    <state x="338" y="135" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1591253396168" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1591193148334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
