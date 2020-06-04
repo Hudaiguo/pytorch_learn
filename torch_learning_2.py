@@ -48,7 +48,10 @@ def conv1d(input, weight, bias=None, stride=1, padding=0, dilation=1, groups=1):
     return f(input, weight, bias)
 """
 
-
+#torch.nn
+class(nn.Module):
+    def __int__(self):
+        super(Module, self).__int__()
 
 x = torch.ones((2,3), requires_grad=True)
 print(x)
@@ -59,3 +62,27 @@ https://pytorch-cn.readthedocs.io/zh/latest/package_references/torch-nn/#torchnn
 
 https://www.cnblogs.com/silence-cho/p/11404817.html
 """
+
+
+class Module(nn.Module):
+    def __init__(self):
+        super(Module, self).__init__()
+        self.conv1 = nn.Conv2d(1, 20, 5)
+        self.conv2 = nn.Conv2d(20, 20, 5)
+
+    def forward(self, x):
+        x = F.relu(self.conv1(x))
+        return F.relu(self.conv2(x))
+
+m = Module()
+print(m)
+
+
+class Module1(nn.Module):
+    def __init__(self):
+        super(Module1, self).__init__()
+        # self.conv1 = nn.Conv2d(10, 20, 4)
+        self.add_module("conv", nn.Conv2d(10, 20, 4))  #添加name属性
+
+model1 = Module1()
+print(model1.conv)
